@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Header, Nav, Logo, Container, Anchor } from './style'
+import { Header, Nav, Logo, Container, Anchor, Button, NavMobile, ContainerMobile } from './style'
 
 const NavBar: React.FC = () => {
   return (
@@ -12,9 +12,14 @@ const NavBar: React.FC = () => {
           <Anchor>About</Anchor>
           <Anchor>Projects</Anchor>
           <Anchor>Skills</Anchor>
-          <Anchor>Talk to me</Anchor>
+          <Button>Talk to me</Button>
         </Container>
       </Nav>
+      <NavMobile>
+        <ContainerMobile>About</ContainerMobile>
+        <ContainerMobile>Projects</ContainerMobile>
+        <ContainerMobile>Skills</ContainerMobile>
+      </NavMobile>
     </Header>
   )
 }
