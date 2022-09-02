@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const Header = styled.header `
-  width: 100vw;
-  height: 100px;
-  font-size: 16px;
-  background: #23252f;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-`;
-
 export const Nav = styled.nav `
   padding: 0 16px;
   width: 80%;
@@ -20,28 +8,18 @@ export const Nav = styled.nav `
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media(max-width: 888px) {
-    display: none;
-  }
 `;
 
 export const NavMobile = styled.nav `
-  width: 80%;
-  min-width: 250px;
-  max-width: 380px;
-  height: 60px;
-  background: #3b3a51;
-  position: absolute;
-  bottom: 30px;
-  border-radius: 20px;
-
+  height: 50px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #3b3a51;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-
-  @media(min-width: 889px) {
-    display: none;
-  }
+  justify-content: space-around;
+  border-radius: 20px;
 `;
 
 export const Logo = styled.a `
@@ -89,13 +67,29 @@ export const Anchor = styled.div `
   }
 `;
 
-export const ContainerMobile = styled.div`
-  width: 70px;
-  height: 40px;
+export const NavDesktop = styled.div`
+  width: 100vw;
+  height: 100px;
+  font-size: 16px;
+  background: #23252f;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f3f3f3;
+  z-index: 10;
+  @media(max-width: 888px) {
+    display: none;
+  }
+`;
 
-  cursor: pointer;
+export const ContainerMobile = styled.div`
+  position: absolute;
+  bottom: 30px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  
+  @media(min-width: 889px) {
+    display: none;
+  }
 `;

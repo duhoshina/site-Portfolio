@@ -10,7 +10,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
         <GlobalStyle />
         <NavBar />
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

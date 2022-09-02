@@ -1,4 +1,5 @@
 import React from 'react'
+import SectionImage from '../components/SectionImage'
 
 import SectionTitle from '../components/SectionTitle/index'
 
@@ -8,6 +9,7 @@ const Home = () => {
   return (
     <S.Main>
       <SectionTitle />
+      <SectionImage />
     </S.Main>
   )
 }
