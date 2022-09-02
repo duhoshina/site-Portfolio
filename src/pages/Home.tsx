@@ -1,8 +1,14 @@
 import React from 'react'
 
+import SectionTitle from '../components/SectionTitle/index'
+
+import * as S from './HomeStyled'
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <S.Main>
+      <SectionTitle />
+    </S.Main>
   )
 }
 
