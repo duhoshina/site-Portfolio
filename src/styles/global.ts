@@ -10,7 +10,7 @@ export default createGlobalStyle`
  body {
   background: #23252f;
   font-size: 14px;
-  color: #333;
+  color: #f3f3f3;
  
   @font-face {
     font-family: 'ubuntu';
@@ -26,10 +26,13 @@ export default createGlobalStyle`
     font-style: normal;
   }
 
-
   @font-face {
     font-family: face;
     src: url();
+  }
+
+  a {
+    text-decoration: none;
   }
 
   font-family: ubuntu;

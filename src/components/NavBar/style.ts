@@ -26,9 +26,10 @@ export const Nav = styled.nav `
 `;
 
 export const NavMobile = styled.nav `
-  width: 70%;
+  width: 80%;
   min-width: 250px;
-  height: 80px;
+  max-width: 380px;
+  height: 60px;
   background: #3b3a51;
   position: absolute;
   bottom: 30px;
@@ -44,9 +45,15 @@ export const NavMobile = styled.nav `
 `;
 
 export const Logo = styled.a `
-  cursor: pointer;
   text-transform: uppercase;
+  transition: 0.3s;
+  text-align: center;
   color: #f3f3f3;
+  
+  cursor: pointer;
+  &:hover {
+    font-size:18px
+  }
 `;
 
 export const Container = styled.div `
@@ -59,25 +66,26 @@ export const Container = styled.div `
 `;
 
 export const Anchor = styled.div `
-  color: #fff;
+  color: #f3f3f3;
   padding: 10px 16px;
   margin: 0px 5px;
   transition: 0.3s;
   cursor: pointer;
+
+  &.hightlights-anchor {
+    background: #3b3a51;
+    border-radius: 12px;
+  }
+  
+  &.hightlights-anchor:hover {
+    margin-bottom: 8px;
+    background: #3b3a51;
+    filter: brightness(1.2);
+  }
+
   &:hover {
     border-radius: 12px;
     background: #1a1c23;
-  }
-`;
-
-export const Button = styled.a`
-  background: #3b3a51;
-  border-radius: 12px;
-  padding: 10px 16px;
-  transition: 0.2s;
-  cursor: pointer;
-  &:hover {
-    margin-bottom: 8px;
   }
 `;
 
@@ -87,6 +95,7 @@ export const ContainerMobile = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  color: #f3f3f3;
+
   cursor: pointer;
 `;
