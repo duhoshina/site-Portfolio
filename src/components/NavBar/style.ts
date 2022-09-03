@@ -84,6 +84,7 @@ export const NavDesktop = styled.div`
 
 export const ContainerMobile = styled.div`
   position: absolute;
+  z-index: 1;
   bottom: 30px;
   width: 100vw;
   display: flex;

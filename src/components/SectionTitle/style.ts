@@ -21,20 +21,24 @@ export const H1 = styled.h1`
 `;
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
+  height: 300px;
   width: 80%;
   min-width: 300px;
-  align-items: center;
-  flex-direction: column;
-  height: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const ButtonTarget = styled.a`
+export const ButtonTarget = styled.p`
   padding: 15px 40px;
   border-radius: 15px;
   background-color: #6d59a8;
   color: #f3f3f3;
   transition: 0.3s;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
