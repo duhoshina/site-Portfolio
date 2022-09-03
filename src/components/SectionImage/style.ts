@@ -11,8 +11,8 @@ export const Section = styled.section `
 `;
 
 export const Container = styled.div `
-  height: 100%;
-  width: 100%;
+  height: 464px;
+  width: 800px;
   max-width: 1161px;
   background-image: url(${img});
   background-repeat: no-repeat;
