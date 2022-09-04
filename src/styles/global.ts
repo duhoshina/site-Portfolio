@@ -11,6 +11,7 @@ export default createGlobalStyle`
   background: #23252f;
   font-size: 14px;
   color: #f3f3f3;
+  overflow-x: hidden;
  
   @font-face {
     font-family: 'ubuntu';
