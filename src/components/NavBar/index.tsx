@@ -7,7 +7,7 @@ import * as S from './style'
 const NavBar: React.FC = () => {
   return (
     <>
-      <header>
+      <S.Header>
         <S.NavDesktop>
           <S.Nav>
             <Link to="/"><S.Logo> duhoshina </S.Logo></Link>
@@ -26,7 +26,7 @@ const NavBar: React.FC = () => {
               <Link to="/"><S.Anchor>Skills</S.Anchor></Link>
             </S.NavMobile>
         </S.ContainerMobile>
-      </header>
+      </S.Header>
     </>
   )
 }

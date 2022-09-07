@@ -8,9 +8,9 @@ export default createGlobalStyle`
  }
 
  body {
-  background: #23252f;
+  background: #ffffff;
   font-size: 14px;
-  color: #f3f3f3;
+  color: #263238;
   overflow-x: hidden;
  
   @font-face {
@@ -25,11 +25,6 @@ export default createGlobalStyle`
     src: url('Ubuntu-M.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
-  }
-
-  @font-face {
-    font-family: face;
-    src: url();
   }
 
   a {
