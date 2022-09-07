@@ -4,7 +4,6 @@ export const Section = styled.section`
   max-width: 1168px;
   min-height: 400px;
   flex-wrap: wrap;
-  height: 80vh;
   width: 80%;
   padding-top: 50px;
   display: flex;
@@ -13,6 +12,7 @@ export const Section = styled.section`
 
   @media (min-width: 1111px) {
     width: 100%;
+    height: 80vh;
   }
 `;
 
@@ -22,7 +22,7 @@ export const H2 = styled.h2`
 
 export const H1 = styled.h1`
   font-size: 4em;
-  margin: 10px 0px 30px;
+  margin: 20px 0px 30px;
   text-align: start;
 
   @media (max-width: 1111px) {
@@ -60,6 +60,11 @@ export const ButtonTarget = styled.p`
 
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
   }
 `;
 
