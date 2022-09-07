@@ -7,6 +7,11 @@ export default createGlobalStyle`
   box-sizing: border-box;
  }
 
+ ::selection {
+  color: #fff;
+  background: #6d59a8;
+  }
+
  body {
   background: #ffffff;
   font-size: 14px;
