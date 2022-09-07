@@ -9,5 +9,5 @@ export const Section = styled.section`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 70px;
 `;

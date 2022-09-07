@@ -13,7 +13,10 @@ const SectionTitle: React.FC = () => {
       <S.Container>
         <S.H2>Programming with React and TypeScript</S.H2>
         <S.H1>I create beautiful websites your users will love</S.H1>
-        <Link to="/home"><S.ButtonTarget>Explore More</S.ButtonTarget></Link>
+        <S.DivButton>
+          <Link to="/home"><S.ButtonTarget>Explore More</S.ButtonTarget></Link>
+          <Link to="/home"><S.ButtonTarget className="download">Donwload CV</S.ButtonTarget></Link>
+        </S.DivButton>
       </S.Container>
       <S.SectionIMG>
         <S.IMG src={gif} alt="Loading..." />

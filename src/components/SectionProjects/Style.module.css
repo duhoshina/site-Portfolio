@@ -77,11 +77,14 @@
 
 .title {
   text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 .subtitle {
   text-align: center;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 700px) {

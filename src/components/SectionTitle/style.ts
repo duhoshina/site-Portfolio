@@ -57,14 +57,25 @@ export const ButtonTarget = styled.p`
   background-color: #6d59a8;
   color: #f3f3f3;
   transition: 0.3s;
+  border: #6d59a8 2px solid;
 
   &:hover {
     filter: brightness(1.2);
     transform: scale(1.1);
   }
 
+  &.download {
+    background-color: #fff;
+    color: #6d59a8;
+    font-weight: 600;
+  }
+
   &:active {
     transform: scale(0.95);
+  }
+
+  @media (max-width: 440px) {
+    padding: 15px 30px;
   }
 `;
 
@@ -78,4 +89,14 @@ export const SectionIMG = styled.div`
 
 export const IMG = styled.img`
   width: 100%;
+`;
+
+export const DivButton = styled.div`
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+
+  @media (max-width: 440px) {
+    width: 320px;
+  }
 `;
