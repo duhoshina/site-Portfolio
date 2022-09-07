@@ -12,18 +12,18 @@ const NavBar: React.FC = () => {
           <S.Nav>
             <Link to="/"><S.Logo> duhoshina </S.Logo></Link>
             <S.Container>
-              <Link to="/home"><S.Anchor>About</S.Anchor></Link>
-              <Link to="/"><S.Anchor>Projects</S.Anchor></Link>
-              <Link to="/"><S.Anchor>Skills</S.Anchor></Link>
-              <Link to="/"><S.Anchor className='hightlights-anchor'>Talk to me</S.Anchor></Link>
+              <Link to="/about"><S.Anchor>About</S.Anchor></Link>
+              <Link to="/projects"><S.Anchor>Projects</S.Anchor></Link>
+              <Link to="/skills"><S.Anchor>Skills</S.Anchor></Link>
+              <Link to="/contact"><S.Anchor className='hightlights-anchor'>Talk to me</S.Anchor></Link>
             </S.Container>
           </S.Nav>
         </S.NavDesktop> 
         <S.ContainerMobile>
           <S.NavMobile>
-              <Link to="/home"><S.Anchor>About</S.Anchor></Link>
-              <Link to="/"><S.Anchor>Projects</S.Anchor></Link>
-              <Link to="/"><S.Anchor>Skills</S.Anchor></Link>
+              <Link to="/about"><S.Anchor>About</S.Anchor></Link>
+              <Link to="/projects"><S.Anchor>Projects</S.Anchor></Link>
+              <Link to="/skills"><S.Anchor>Skills</S.Anchor></Link>
             </S.NavMobile>
         </S.ContainerMobile>
       </S.Header>

@@ -15,7 +15,7 @@ const SectionTitle: React.FC = () => {
         <S.H1>I create beautiful websites your users will love</S.H1>
         <S.DivButton>
           <Link to="/home"><S.ButtonTarget>Explore More</S.ButtonTarget></Link>
-          <Link to="/home"><S.ButtonTarget className="download">Donwload CV</S.ButtonTarget></Link>
+          <Link to="/home"><S.ButtonTarget className="download">Download CV</S.ButtonTarget></Link>
         </S.DivButton>
       </S.Container>
       <S.SectionIMG>
