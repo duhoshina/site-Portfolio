@@ -36,6 +36,10 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
+  .md-light {
+    color: #fff;
+  }
+
   font-family: ubuntu;
  }
 `;

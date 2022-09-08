@@ -51,13 +51,14 @@ export const Container = styled.div`
 
 `;
 
-export const ButtonTarget = styled.p`
+export const ButtonTarget = styled.a`
   padding: 15px 40px;
   border-radius: 15px;
   background-color: #6d59a8;
   color: #f3f3f3;
   transition: 0.3s;
   border: #6d59a8 2px solid;
+  cursor: pointer;
 
   &:hover {
     filter: brightness(1.2);

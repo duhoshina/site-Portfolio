@@ -1,6 +1,7 @@
 /* components da aplicacao */
 import NavBar from "./components/NavBar/index";
 import GlobalStyle from './styles/global'
+import Footer from "./components/Footer";
 
 /* pages */
 import Home from "./pages/Home";
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
