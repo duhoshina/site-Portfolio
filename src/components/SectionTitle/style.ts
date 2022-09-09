@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
+  width: 80%;
   max-width: 1168px;
   min-height: 400px;
   flex-wrap: wrap;
-  width: 80%;
   padding-top: 50px;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@ export const Section = styled.section`
 
   @media (min-width: 1111px) {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
   }
 `;
 

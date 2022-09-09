@@ -49,7 +49,7 @@ const SectionGame = () => {
 
   return (
     <S.Section>
-        <h2 className={styles.title}>My skills are out of control! </h2>
+        <h2 className={styles.title}>My skills are out of control </h2>
         <h3 className={styles.subtitle}>I love manipulating technology through my programming skills. Currently, I have been so bewildered that the technologies will be all jumbled up inside my mind.</h3>
         <div className={styles.box}>
           <label>

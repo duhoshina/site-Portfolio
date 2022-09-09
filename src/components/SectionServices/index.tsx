@@ -9,8 +9,8 @@ const SectionServices = () => {
     {id: 2, title: 'Business Strategy', content: 'We discuss what you are trying to achieve, and place goals on your website planning how to achieve that.', icon: 'assessment'},
     {id: 3, title: 'User Experience Design', content: 'I design your website to be as easy to use as possible while guiding users towards the end goal.', icon: 'draw'},
     {id: 4, title: 'Tailored Development', content: 'I build with your goals in mind, whether you want a simple flexible website, a custom storefront or a SaaS product.', icon: 'branding_watermark'},
-    {id: 5, title: 'Tailored Development', content: 'I build with your goals in mind, whether you want a simple flexible website, a custom storefront or a SaaS product.', icon: 'branding_watermark'},
-    {id: 6, title: 'Tailored Development', content: 'I build with your goals in mind, whether you want a simple flexible website, a custom storefront or a SaaS product.', icon: 'branding_watermark'}
+    {id: 5, title: 'Rigorous Testing', content: 'I ensure your website is of excellent quality by thoroughly testing using multiple approaches.', icon: 'sync_problem'},
+    {id: 6, title: 'Ongoing Support', content: 'Your website is always growing. Whether you’re adding new features or making improvements I’m here to help.', icon: 'headset_mic'}
   ]
 
   return (

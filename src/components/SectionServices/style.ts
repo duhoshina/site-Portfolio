@@ -10,9 +10,11 @@ export const Section = styled.section`
 `;
 
 export const StyledH2 = styled.h2 `
-  font-size: 2.5em;
+  font-size: 3em;
   color: #263238;
   margin-bottom: 50px;
+  text-align: center;
+
   @media (max-width: 800px) {
     width: 80%;
     text-align: center;
@@ -85,7 +87,7 @@ export const Anchor = styled.a`
 export const ContainerButton = styled.div`
   display: flex;
   width: 170px;
-  margin-top: 20px;
+  margin-top: 40px;
   justify-content: space-between;
   align-items: center;
   transition: 0.3s;

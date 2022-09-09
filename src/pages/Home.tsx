@@ -5,6 +5,7 @@ import SectionGame from '../components/SectionProjects'
 import SectionServices from '../components/SectionServices'
 
 import * as S from './HomeStyled'
+import SectionTestimonial from '../components/SectionTestimonial'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <SectionTitle />
       <SectionServices />
       <SectionGame />
+      <SectionTestimonial />
     </S.Main>
   )
 }
