@@ -9,25 +9,12 @@ export const Section = styled.section`
   align-items: center;
 `;
 
-export const ContainerSlide = styled.div`
-  max-width: 1120px;
-  width: 100%;
-  background: grey;
-  padding: 40px 0;
-`;
-
-export const ContentSlide = styled.div`
-  margin: 0 40px;
-`;
-
-export const CardWrapper = styled.div`
-
-`;
-
 export const Card = styled.div`
   border-radius: 25px;
+  margin: 0px 50px;
   background: #f3f3f3;
-  max-width: 350px;
+  width: 350px;
+  height: 450px;
 `; 
 
 export const ImageContent = styled.div`
@@ -100,5 +87,18 @@ export const StyledParagraph = styled.p`
   font-size: 14px;
   color: #707070;
   text-align: center;
+`;
+
+export const StyledH2 = styled.div`
+  font-size: 3em;
+  color: #263238;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 600;
+
+  @media (max-width: 800px) {
+    width: 80%;
+    text-align: center;
+  }
 `;
 
