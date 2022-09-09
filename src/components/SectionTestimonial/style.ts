@@ -11,7 +11,6 @@ export const Section = styled.section`
 
 export const Card = styled.div`
   border-radius: 25px;
-  margin: 0px 50px;
   background: #f3f3f3;
   width: 350px;
   height: 450px;
@@ -66,7 +65,7 @@ export const StyledImage = styled.img`
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #6d59a8;
+  border: 4px solid #f3f3f3;
 `;
 
 export const CardContent = styled.div`
@@ -80,7 +79,7 @@ export const StyledTitle = styled.h3`
   font-size: 18px;
   font-weight: 500;
   color: #263238;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 `;
 
 export const StyledParagraph = styled.p`
@@ -100,5 +99,11 @@ export const StyledH2 = styled.div`
     width: 80%;
     text-align: center;
   }
+`;
+
+export const StyledSubtitle = styled.h3`
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
 `;
 

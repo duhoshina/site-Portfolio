@@ -21,17 +21,18 @@ import * as S from './style'
 const SectionTestimonial = () => {
 
   const ListTestimonial = [
-    {id: 1, title: 'Arthur Paulucci', content: 'O Luis é um desenvolvedor fenomenal. Sempre dando atenção aos mínimos detalhes da aplicação; pensando sempre no usuário, de forma intuitiva, e no projeto final como um todo. Em nosso time, era comum vir a implementar novas tecnologias e novos recursos que facilitassem as ideias que, por si só, eram inovadoras um excelente profissional', img: img1},
-    {id: 2, title: 'João Rosas', content: 'O Luis é um desenvolvedor fenomenal. Sempre dando atenção aos mínimos detalhes da aplicação; pensando sempre no usuário, de forma intuitiva, e no projeto final como um todo. Em nosso time, era comum vir a implementar novas tecnologias e novos recursos que facilitassem as ideias que, por si só, eram inovadoras um excelente profissional', img: img2},
-    {id: 3, title: 'Ana Clara Godoy', content: 'É sempre bom ter pessoas como o Luis para trabalhar. Tive o prazer de trabalhar com ele na Prefeitura de Jacareí, no desenvolvimento de alguns projetos. Objetividade sempre foi uma característica do seu trabalho, bem como a colaboração. Sem dúvidas, é ótimo ter profissionais como o Luis para trabalhar.', img: img3}
+    {id: 1, title: 'Arthur Paulucci', content: 'O Luis é um desenvolvedor fenomenal. Sempre dando atenção aos mínimos detalhes da aplicação; pensando sempre no usuário, de forma intuitiva, e no projeto final como um todo. Em nosso time, era comum vir a implementar novas tecnologias e novos recursos que facilitassem as ideias que, por si só, eram inovadoras um excelente profissional', subtitle: 'Estagiário', img: img1},
+    {id: 2, title: 'João Rosas', content: 'O Luis é um desenvolvedor fenomenal. Sempre dando atenção aos mínimos detalhes da aplicação; pensando sempre no usuário, de forma intuitiva, e no projeto final como um todo. Em nosso time, era comum vir a implementar novas tecnologias e novos recursos que facilitassem as ideias que, por si só, eram inovadoras um excelente profissional', subtitle: 'Assistente Administrativo', img: img2},
+    {id: 3, title: 'Ana Clara Godoy', content: 'É sempre bom ter pessoas como o Luis para trabalhar. Tive o prazer de trabalhar com ele na Prefeitura de Jacareí, no desenvolvimento de alguns projetos. Objetividade sempre foi uma característica do seu trabalho, bem como a colaboração. Sem dúvidas, é ótimo ter profissionais como o Luis para trabalhar.', subtitle: 'Analista de Suporte Técnico', img: img3}
   ]
 
   return (
     <S.Section>
-      <S.StyledH2>See testimonial send for my working partner</S.StyledH2>
+      <S.StyledH2>See testimonials from my co-workers</S.StyledH2>
       <Swiper
+        spaceBetween={40}
         slidesPerView={3}
-        slidesPerGroup={3}
+        slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
@@ -40,6 +41,8 @@ const SectionTestimonial = () => {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+
+        
       >
         {ListTestimonial.map((item) => (
           <SwiperSlide>
@@ -53,6 +56,7 @@ const SectionTestimonial = () => {
                 </S.ImageContent>
                 <S.CardContent>
                   <S.StyledTitle>{item.title}</S.StyledTitle>
+                  <S.StyledSubtitle>{item.subtitle}</S.StyledSubtitle>
                   <S.StyledParagraph>{item.content}</S.StyledParagraph>
                 </S.CardContent>
               </S.Card>
