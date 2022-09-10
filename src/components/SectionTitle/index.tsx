@@ -12,7 +12,8 @@ const SectionTitle: React.FC = () => {
       <S.Container>
         <S.H2>Programming with React and TypeScript</S.H2>
         <S.H1><Typical
-        steps={["Hello", 2000, "I'm Frontend Developer 👾", 4000]}
+        steps={['Hello 🖐', 2000, 'My name is Luis 😉', 3000, 
+        'I am Front-end Developer 👾', 4000]}
         loop={1}
         wrapper="p"
       /></S.H1>

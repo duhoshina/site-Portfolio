@@ -14,6 +14,13 @@ export const Card = styled.div`
   background: #f3f3f3;
   width: 350px;
   height: 450px;
+
+  cursor: -webkit-grab;
+  cursor: grab;
+
+  :active {
+    cursor: grabbing;
+  }
 `; 
 
 export const ImageContent = styled.div`
@@ -105,5 +112,11 @@ export const StyledSubtitle = styled.h3`
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 15px;
+`;
+
+export const ContainerSwiper = styled.div`
+  width: 100%;
+  max-width: 1168px;
+  min-width: 300px;
 `;
 

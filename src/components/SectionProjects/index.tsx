@@ -6,9 +6,12 @@ import * as S from './style'
 
 const SectionGame = () => {
 
+  // click pause
   const [checkBoxValue1, SetCheckBoxValue1] = useState<boolean>(false);
   const [checkBoxValue2, SetCheckBoxValue2] = useState<boolean>(false);
   const [checkBoxValue3, SetCheckBoxValue3] = useState<boolean>(false);
+
+  // reset button
   const [resetChecked1, SetResetChecked1] = useState<boolean>(false)
   const [resetChecked2, SetResetChecked2] = useState<boolean>(false)
   const [resetChecked3, SetResetChecked3] = useState<boolean>(false)

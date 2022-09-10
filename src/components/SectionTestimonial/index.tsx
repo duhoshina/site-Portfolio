@@ -29,40 +29,51 @@ const SectionTestimonial = () => {
   return (
     <S.Section>
       <S.StyledH2>See testimonials from my co-workers</S.StyledH2>
-      <Swiper
-        spaceBetween={40}
-        slidesPerView={3}
-        slidesPerGroup={1}
-        loop={true}
-        loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-
-        
-      >
-        {ListTestimonial.map((item) => (
-          <SwiperSlide>
-              <S.Card>
-                <S.ImageContent>
-                  <S.StyledSpan>
-                  </S.StyledSpan>
-                  <S.CardImage>
-                    <S.StyledImage src={item.img} />
-                  </S.CardImage>
-                </S.ImageContent>
-                <S.CardContent>
-                  <S.StyledTitle>{item.title}</S.StyledTitle>
-                  <S.StyledSubtitle>{item.subtitle}</S.StyledSubtitle>
-                  <S.StyledParagraph>{item.content}</S.StyledParagraph>
-                </S.CardContent>
-              </S.Card>
-          </SwiperSlide>
-            ))}
-      </Swiper>
+      <S.ContainerSwiper>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}
+          slidesPerGroup={1}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            720: {
+              slidesPerView: 2,
+            },
+            950: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {ListTestimonial.map((item) => (
+            <SwiperSlide>
+                <S.Card>
+                  <S.ImageContent>
+                    <S.StyledSpan>
+                    </S.StyledSpan>
+                    <S.CardImage>
+                      <S.StyledImage src={item.img} />
+                    </S.CardImage>
+                  </S.ImageContent>
+                  <S.CardContent>
+                    <S.StyledTitle>{item.title}</S.StyledTitle>
+                    <S.StyledSubtitle>{item.subtitle}</S.StyledSubtitle>
+                    <S.StyledParagraph>{item.content}</S.StyledParagraph>
+                  </S.CardContent>
+                </S.Card>
+            </SwiperSlide>
+              ))}
+        </Swiper>
+      </S.ContainerSwiper>
     </S.Section>
   )
 }
