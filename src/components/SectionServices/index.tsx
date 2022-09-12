@@ -1,37 +1,76 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
+import { useTranslation } from "react-i18next"
+
 import * as S from './style'
 
 const SectionServices = () => {
 
-  const ListServices = [
-    {id: 1, title: 'Website Review', content: 'I make sure your website is performing its best by thoroughly reviewing it before making any changes.', icon: 'search'},
-    {id: 2, title: 'Business Strategy', content: 'We discuss what you are trying to achieve, and place goals on your website planning how to achieve that.', icon: 'assessment'},
-    {id: 3, title: 'User Experience Design', content: 'I design your website to be as easy to use as possible while guiding users towards the end goal.', icon: 'draw'},
-    {id: 4, title: 'Tailored Development', content: 'I build with your goals in mind, whether you want a simple flexible website, a custom storefront or a SaaS product.', icon: 'branding_watermark'},
-    {id: 5, title: 'Rigorous Testing', content: 'I ensure your website is of excellent quality by thoroughly testing using multiple approaches.', icon: 'sync_problem'},
-    {id: 6, title: 'Ongoing Support', content: 'Your website is always growing. Whether you’re adding new features or making improvements I’m here to help.', icon: 'headset_mic'}
-  ]
+  const { t } = useTranslation();
 
   return (
     <S.Section>
-      <S.StyledH2>Everything you need for a perfect website</S.StyledH2>
+      <S.StyledH2>{t("everythingYouNeed")}</S.StyledH2>
       <S.ContainerBox>
-        {ListServices.map((item) => (
-          <S.ContainerCard>
-            <S.ContainerIcon>
-              <span className='material-icons md-light'>{item.icon}</span>
-            </S.ContainerIcon>
-            <S.ContainerDivFlex>
-              <h3>{item.title}</h3>
-              <p>{item.content}</p>
-            </S.ContainerDivFlex>
-          </S.ContainerCard>
-        ))}
+        <S.ContainerCard>
+          <S.ContainerIcon>
+            <span className='material-icons md-light'>search</span>
+          </S.ContainerIcon>
+          <S.ContainerDivFlex>
+            <h3>{t("websiteReview")}</h3>
+            <p>{t("websiteReviewContent")}</p>
+          </S.ContainerDivFlex>
+        </S.ContainerCard>
+        <S.ContainerCard>
+          <S.ContainerIcon>
+            <span className='material-icons md-light'>assessment</span>
+          </S.ContainerIcon>
+          <S.ContainerDivFlex>
+            <h3>{t("businessStrategy")}</h3>
+            <p>{t("businessStrategyContent")}</p>
+          </S.ContainerDivFlex>
+        </S.ContainerCard>
+        <S.ContainerCard>
+          <S.ContainerIcon>
+            <span className='material-icons md-light'>draw</span>
+          </S.ContainerIcon>
+          <S.ContainerDivFlex>
+            <h3>{t("userExperience")}</h3>
+            <p>{t("userExperienceContent")}</p>
+          </S.ContainerDivFlex>
+        </S.ContainerCard>
+        <S.ContainerCard>
+          <S.ContainerIcon>
+            <span className='material-icons md-light'>branding_watermark</span>
+          </S.ContainerIcon>
+          <S.ContainerDivFlex>
+            <h3>{t("tailoredDevelopment")}</h3>
+            <p>{t("tailoredDevelopmentContent")}</p>
+          </S.ContainerDivFlex>
+        </S.ContainerCard>
+        <S.ContainerCard>
+          <S.ContainerIcon>
+            <span className='material-icons md-light'>sync_problem</span>
+          </S.ContainerIcon>
+          <S.ContainerDivFlex>
+            <h3>{t("rigorousTesting")}</h3>
+            <p>{t("rigorousTestingContent")}</p>
+          </S.ContainerDivFlex>
+        </S.ContainerCard>
+        <S.ContainerCard>
+          <S.ContainerIcon>
+            <span className='material-icons md-light'>headset_mic</span>
+          </S.ContainerIcon>
+          <S.ContainerDivFlex>
+            <h3>{t("ongoingSupport")}</h3>
+            <p>{t("ongoingSupportContent")}</p>
+          </S.ContainerDivFlex>
+        </S.ContainerCard>
       </S.ContainerBox>
       <Link to="/skills">
         <S.ContainerButton>
-          <S.Anchor>See my other skills</S.Anchor>
+          <S.Anchor>{t("otherSkills")}</S.Anchor>
           <span className='material-icons'>east</span>
         </S.ContainerButton>
       </Link>

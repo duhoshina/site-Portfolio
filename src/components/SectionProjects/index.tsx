@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import { useTranslation } from "react-i18next"
 
 import styles from './Style.module.css'
 
 import * as S from './style'
 
 const SectionGame = () => {
+
+  const { t } = useTranslation();
 
   // click pause
   const [checkBoxValue1, SetCheckBoxValue1] = useState<boolean>(false);
@@ -52,23 +55,23 @@ const SectionGame = () => {
 
   return (
     <S.Section>
-        <h2 className={styles.title}>My skills are out of control </h2>
-        <h3 className={styles.subtitle}>I love manipulating technology through my programming skills. Currently, I have been so bewildered that the technologies will be all jumbled up inside my mind.</h3>
+        <h2 className={styles.title}>{t("skillsOutControl")}</h2>
+        <h3 className={styles.subtitle}>{t("skillsOutControlContent")}</h3>
         <div className={styles.box}>
           <label>
-            <input type="checkbox" className={styles.checkbox} id='chk1' onClick={verifyChecked1} checked={resetChecked1} disabled={checkBoxValue1}/>
+            <input type="checkbox" className={styles.checkbox} id='chk1' onChange={verifyChecked1} checked={resetChecked1} disabled={checkBoxValue1}/>
             <i></i>
           </label>
           <label>
-            <input type="checkbox" className={styles.checkbox} id='chk2' onClick={verifyChecked2} checked={resetChecked2} disabled={checkBoxValue2}/>
+            <input type="checkbox" className={styles.checkbox} id='chk2' onChange={verifyChecked2} checked={resetChecked2} disabled={checkBoxValue2}/>
             <i></i>
           </label>
           <label>
-            <input type="checkbox" className={styles.checkbox} id='chk3' onClick={verifyChecked3} checked={resetChecked3} disabled={checkBoxValue3}/>
+            <input type="checkbox" className={styles.checkbox} id='chk3' onChange={verifyChecked3} checked={resetChecked3} disabled={checkBoxValue3}/>
             <i></i>
           </label>
         </div>
-        <button className={styles.reset} onClick={resetButton} >Reset Game</button>
+        <button className={styles.reset} onClick={resetButton} >{t("resetGame")}</button>
     </S.Section>
   )
 }

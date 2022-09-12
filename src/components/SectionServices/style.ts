@@ -27,9 +27,10 @@ export const ContainerBox = styled.div `
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  font-size: 16px;
+  gap: 30px;
 
-  @media (max-width: 1110px) {
+  @media (max-width: 800px) {
     width: 80%;
   }
 `;
@@ -49,7 +50,7 @@ export const ContainerDivFlex = styled.div`
 `;
 
 export const ContainerCard = styled.div`
-  width: 350px;
+  width: 330px;
   min-width: 300px;
   height: 100px;
   display: flex;
@@ -86,11 +87,13 @@ export const Anchor = styled.a`
 
 export const ContainerButton = styled.div`
   display: flex;
-  width: 170px;
+  width: 100%;
+  max-width: 300px;
   margin-top: 40px;
   justify-content: space-between;
   align-items: center;
   transition: 0.3s;
+  gap: 20px;
   
   &:hover {
     transform: scale(1.1);

@@ -36,7 +36,7 @@ export const Logo = styled.a `
 `;
 
 export const Container = styled.div `
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   height: 30px;
   display: flex;
@@ -44,7 +44,7 @@ export const Container = styled.div `
   justify-content: space-between;
 `;
 
-export const Anchor = styled.div `
+export const Anchor = styled.a `
   padding: 10px 16px;
   margin: 0px 5px;
   transition: 0.3s;
