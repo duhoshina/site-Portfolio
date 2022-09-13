@@ -23,12 +23,6 @@ const SectionTestimonial = () => {
 
   const { t } = useTranslation();
 
-  const ListTestimonial = [
-    {id: 1, title: 'Arthur Paulucci', content: 'O Luis é um desenvolvedor fenomenal. Sempre dando atenção aos mínimos detalhes da aplicação; pensando sempre no usuário, de forma intuitiva, e no projeto final como um todo. Em nosso time, era comum vir a implementar novas tecnologias e novos recursos que facilitassem as ideias que, por si só, eram inovadoras um excelente profissional', subtitle: 'Estagiário', img: img1},
-    {id: 2, title: 'João Rosas', content: 'O Luis é um desenvolvedor fenomenal. Sempre dando atenção aos mínimos detalhes da aplicação; pensando sempre no usuário, de forma intuitiva, e no projeto final como um todo. Em nosso time, era comum vir a implementar novas tecnologias e novos recursos que facilitassem as ideias que, por si só, eram inovadoras um excelente profissional', subtitle: 'Assistente Administrativo', img: img2},
-    {id: 3, title: 'Ana Clara Godoy', content: 'É sempre bom ter pessoas como o Luis para trabalhar. Tive o prazer de trabalhar com ele na Prefeitura de Jacareí, no desenvolvimento de alguns projetos. Objetividade sempre foi uma característica do seu trabalho, bem como a colaboração. Sem dúvidas, é ótimo ter profissionais como o Luis para trabalhar.', subtitle: 'Analista de Suporte Técnico', img: img3}
-  ]
-
   return (
     <S.Section>
       <S.StyledH2>{t("testimonial")}</S.StyledH2>

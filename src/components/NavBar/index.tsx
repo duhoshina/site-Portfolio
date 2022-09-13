@@ -21,8 +21,8 @@ const NavBar: React.FC = () => {
               <Link to="/projects"><S.Anchor>{t("projects")}</S.Anchor></Link>
               <Link to="/skills"><S.Anchor>{t("skills")}</S.Anchor></Link>
               <Link to="/contact"><S.Anchor className='hightlights-anchor'>{t("talkToMe")}</S.Anchor></Link>
+              <LanguageSwitcher />
             </S.Container>
-            <LanguageSwitcher />
           </S.Nav>
         </S.NavDesktop> 
         <S.ContainerMobile>

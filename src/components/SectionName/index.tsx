@@ -1,12 +1,16 @@
 import React from 'react'
+import { useTranslation } from "react-i18next"
 
 import * as S from './style'
 
 const SectionName = () => {
+
+  const { t } = useTranslation();
+
   return (
     <S.ContainerSection>
-      <h2>Hi There!</h2>
-      <h1>My Name is Luis Eduardo Hoshina</h1>
+      <h2>{t("hiThere")}</h2>
+      <h1>{t("myNameIs")}</h1>
     </S.ContainerSection>
   )
 }

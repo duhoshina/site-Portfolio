@@ -7,4 +7,9 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   font-size: x-large;
+  gap: 50px;
+
+  @media (max-width: 1100px) {
+    gap: initial;
+  }
 `;

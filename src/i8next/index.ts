@@ -5,15 +5,15 @@ import enJSON from './translations/en.json'
 import ptJSON from './translations/ptBR.json'
 
 il8n.use(initReactI18next).init({
-  fallbackLng: 'en',
+  fallbackLng: 'English',
 
   interpolation: {
     escapeValue: false
   },
 
   resources: {
-    en: enJSON,
-    pt: ptJSON
+    English: enJSON,
+    Português: ptJSON
   }
 
 })

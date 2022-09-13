@@ -15,7 +15,7 @@ export const NavMobile = styled.nav `
   width: 100%;
   color: #3b3a51;
   min-width: 200px;
-  max-width: 300px;
+  max-width: 400px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ export const Logo = styled.a `
 `;
 
 export const Container = styled.div `
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
   height: 30px;
   display: flex;
@@ -92,7 +92,7 @@ export const ContainerMobile = styled.div`
   display: flex;
   justify-content: center;
   
-  @media(min-width: 1111px) {
+  @media(min-width: 1110px) {
     display: none;
   }
 `;

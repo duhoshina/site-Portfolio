@@ -5,6 +5,13 @@ export const SectionContainer = styled.section`
   width: 100%;
   max-width: 1168px;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 1100px) {
+    width: 80%;
+    justify-content: center;
+    gap: 20px;
+  }
 `;
 
 export const ContainerImagem = styled.div`
